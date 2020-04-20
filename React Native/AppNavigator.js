@@ -1,13 +1,13 @@
 import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
-import IntakeDashboard from './Screens/Intake/IntakeDashboard.js'
-import SelectPo from './Screens/Intake/SelectPo.js'
-import SelectPoLine from './Screens/Intake/SelectPoLine.js'
-import Scan from './Screens/Intake/Scan.js'
-import Login from './Screens/Login.js'
-import MainMenu from './Screens/MainMenu.js'
-import IntakeLines from './Screens/Intake/IntakeLines.js'
-import SelectProduct from './Screens/Intake/SelectProduct.js'
+import ListOpenIntakes from './src/screens/intake/ListOpenIntakes'
+import SelectPo from './src/screens/intake/SelectPo.js'
+import SelectPoLine from './src/screens/intake/SelectPoLine.js'
+import IntakeScan from './src/screens/intake/IntakeScan.js'
+import Login from './src/screens/Login.js'
+import MainMenu from './src/screens/MainMenu.js'
+import IntakeDetails from './src/screens/intake/IntakeDetails.js'
+import SelectProduct from './src/screens/intake/SelectProduct.js'
 
 const RootStack = createStackNavigator({
   Login:{
@@ -22,8 +22,8 @@ const RootStack = createStackNavigator({
       headerShown:false,
     },
   },
-  IntakeDashboard: {
-    screen: IntakeDashboard,
+  ListOpenIntakes: {
+    screen: ListOpenIntakes,
     navigationOptions: {
       headerShown:false,
     },
@@ -40,14 +40,14 @@ const RootStack = createStackNavigator({
       headerShown:false,
     }
   },
-  IntakeLines: {
-    screen: IntakeLines,
+  IntakeDetails: {
+    screen: IntakeDetails,
     navigationOptions: {
       headerShown:false,
     },
   },
-  Scan: {
-    screen: Scan,
+  IntakeScan: {
+    screen: IntakeScan,
     navigationOptions: {
       headerShown:false,
     },
